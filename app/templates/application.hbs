@@ -1,5 +1,22 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
+<div class="nav-container">
+    <nav class="absolute transparent">
+        <div class="nav-bar">
+            <div class="module left">
+                <a id="header-logo" href="/">
+                    <img src="assets/images/logo_copy_light.png" alt="ScanHappy" class="logo logo-light"/>
+                    <img src="assets/images/logo_copy_dark.png" alt="ScanHappy" class="logo logo-light"/>
+                </a>
+            </div>
+            <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                <i class="ti-menu"></i>
+            </div>
+            <div class="module-group right">
+                <div class="module left">
+                    <ul class="menu">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
 {{outlet}}

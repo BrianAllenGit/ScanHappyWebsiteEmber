@@ -12,6 +12,9 @@ App = Ember.Application.extend({
   podModulePrefix: config.podModulePrefix,
   Resolver
 });
+export default Ember.Component.extend({
+  tagName: 'nav'
+});
 
 loadInitializers(App, config.modulePrefix);
 
