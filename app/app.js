@@ -2,6 +2,7 @@ import Ember from 'ember';
 import Resolver from './resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
+Ember.run.backburner.DEBUG            = true;
 
 let App;
 

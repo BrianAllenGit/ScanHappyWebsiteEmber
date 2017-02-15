@@ -5,9 +5,13 @@
                 <div class="feature bordered text-center">
                     <h4 class="uppercase">Login Here</h4>
                     <form class="text-left">
-                        <input class="mb0" type="text" placeholder="Username" />
-                        <input class="mb0" type="password" placeholder="Password" />
-                        <input type="submit" value="Login" />
+                        {{input type='text' class='form-control mb0' value=email placeholder='Email Address' }}
+                        {{input type='password' class='form-control mb0' value=password placeholder='Password' }}
+                        {{#if session.isWorking}}
+                            <input type="submit" {{action 'signIn' 'password'}} value="Login" disabled='disabled' />
+                        {{else}}
+                            <input type="submit" {{action 'signIn' 'password'}} value="Login" />
+                        {{/if}}
                     </form>
                     <p class="mb0">Forgot your password?
                         <a href="#">Click Here To Reset</a>
