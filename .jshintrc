@@ -28,6 +28,5 @@
   "white": false,
   "eqnull": true,
   "esversion": 6,
-  "unused": true,
-  "$": true 
+  "unused": true
 }

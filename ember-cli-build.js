@@ -24,16 +24,25 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
   app.import('vendor/jquery.min.js');
   app.import('vendor/bootstrap.min.js');
-  app.import('vendor/countdown.min.js');
   app.import('vendor/flexslider.min.js');
+  app.import('vendor/countdown.min.js');
+  app.import('vendor/smooth-scroll.min.js');
   app.import('vendor/parallax.js');
   app.import('vendor/scripts.js');
-  app.import('vendor/smooth-scroll.min.js');
   app.import('vendor/themify.ttf',{
     destDir: 'assets/fonts'
   });
-    app.import('vendor/themify.woff',{
+  app.import('vendor/themify.woff',{
     destDir: 'assets/fonts'
+  });  
+  app.import('vendor/video.ogv',{
+    destDir: 'assets/'
+  });
+  app.import('vendor/video.mp4',{
+    destDir: 'assets/'
+  });
+  app.import('vendor/video.webm',{
+    destDir: 'assets/'
   });
   return app.toTree();
 };

@@ -8,7 +8,7 @@ var mr_firstSectionHeight,
     mr_floatingProjectSections,
     mr_scrollTop = 0;
 
-$(document).ready(function() { 
+function buildUi(){
     "use strict";
     // Smooth scroll to inner links
         var innerLinks = $('a.inner-link');
@@ -1008,7 +1008,7 @@ $(document).ready(function() {
         } 
     }
 
-}); 
+}; 
 
 $(window).load(function() { 
     "use strict";

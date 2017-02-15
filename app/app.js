@@ -10,12 +10,12 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver
-});
-export default Ember.Component.extend({
-  tagName: 'nav'
+  Resolver,
 });
 
+
+
 loadInitializers(App, config.modulePrefix);
+
 
 export default App;
