@@ -10,7 +10,6 @@ var mr_firstSectionHeight,
 
 $(document).ready(function() { 
     "use strict";
-
     // Smooth scroll to inner links
         var innerLinks = $('a.inner-link');
 
@@ -316,6 +315,7 @@ $(document).ready(function() {
 
     // Image Sliders
     if($('.slider-all-controls, .slider-paging-controls, .slider-arrow-controls, .slider-thumb-controls, .logo-carousel').length){
+
         $('.slider-all-controls').flexslider({
             start: function(slider){
                 if(slider.find('.slides li:first-child').find('.fs-vid-background video').length){
@@ -1132,7 +1132,6 @@ function masonryFlyIn() {
         time += 170;
     });
 }
-
 function setupFloatingProjectFilters() {
     mr_floatingProjectSections = [];
     $('.filters.floating').closest('section').each(function() {
