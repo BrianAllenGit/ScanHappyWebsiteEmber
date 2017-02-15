@@ -1,6 +1,5 @@
 function mr_parallax() {
     "use strict";
-
     function a(a) {
         for (var b = 0; b < a.length; b++)
             if ("undefined" != typeof document.body.style[a[b]]) return a[b];
@@ -113,6 +112,8 @@ window.mr_parallax = new mr_parallax,
         function c(b, c, g, h) {
             b[d](f + c, "wheel" == e ? g : function(b) {
                 !b && (b = a.event);
+                    alert("hi");
+
                 var c = {
                     originalEvent: b,
                     target: b.target || b.srcElement,

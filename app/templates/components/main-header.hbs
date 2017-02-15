@@ -2,7 +2,7 @@
     <nav class="absolute transparent">
         <div class="nav-bar">
             <div class="module left">
-                <a href="index.html">
+                <a href="/">
                     <img src="assets/images/logo_copy_light.png" alt="ScanHappy" class="logo logo-light"/>
                     <img src="assets/images/logo_copy_dark.png" alt="ScanHappy" class="logo logo-dark"/>
                 </a>
@@ -14,8 +14,11 @@
                 <div class="module left">
                     <ul class="menu">
                         <li>
-	                        <a href="/">Adventure Travel</a>
+                            {{#link-to "register"}}Register{{/link-to}}                         
 	                    </li>
+                        <li>
+                            {{#link-to "login"}}Login{{/link-to}}
+                        </li>
                     </ul>
                 </div>
             </div>
