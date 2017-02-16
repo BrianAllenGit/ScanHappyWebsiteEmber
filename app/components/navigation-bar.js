@@ -1,12 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	didInsertElement () {
-	 buildUi();
-  },
+	    router: Ember.inject.service('-routing'), 
+
   actions: {
    signOut() {
-     alert('hello!');
-   }
+    	this.get('session').close();
+ 		this.get('router').transitionTo('index');  
+ 	}	
   }
 });
+
+
+
