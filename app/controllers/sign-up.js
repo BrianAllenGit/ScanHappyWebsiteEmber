@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({  
-  firebaseApp: Ember.inject.service(),
   actions: {
       signUp() {
           const auth = this.get('firebaseApp').auth();

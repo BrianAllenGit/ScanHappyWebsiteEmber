@@ -1,9 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({  
-  beforeModel: function() {
-    return this.get('session').fetch().catch(function() {});
-  },actions: {
+    actions: {
     signIn(provider) {
       let controller = this;
       this.get('session').open('firebase', {
