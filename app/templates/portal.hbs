@@ -2,46 +2,38 @@
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-sm-12 text-center">
-		                    <h6 class="uppercase">Section Title</h6>
+		                    <h6 class="uppercase">blank</h6>
 		                    <hr class="mb160 mb-xs-24">
 		                </div>
 		            </div>  
 		            <div class="row">
 		                <div class="col-sm-6 mb-xs-24 col-md-5">
-		                    <i class="ti-pulse icon mb32"></i>
-		                    <h6 class="uppercase">Health Monitoring</h6>
-		                    <ul>
+		              {{!--       <i class="ti-pulse icon mb32"></i>
+		                    <h6 class="uppercase">Health Monitoring</h6> --}}
+		                    {{!-- <ul>
 		                        <li>Medibank Private</li>
 		                        <li>Fit Bit</li>
 		                        <li>GoPro LTD.</li>
 		                        <li>Adventours</li>
 		                        <li>Airbnb</li>
 		                        <li>Chemist Warehouse</li>
-		                    </ul>
+		                    </ul> --}}
+						{{#each user as |user|}}
+						  <div>{{user.name}}</div>
+						  <div>{{user.email}}</div>
+						{{/each}}
 		                </div>
 		                
 		                <div class="col-sm-6 mb-xs-24 col-md-4">
-		                    <i class="ti-mobile icon mb32"></i>
-		                    <h6 class="uppercase">Social Data</h6>
-		                    <ul>
-		                        <li>Life Invader</li>
-		                        <li>Twitter</li>
-		                        <li>Google AdWords</li>
-		                        <li>Track My Day</li>
-		                        <li>SocialScape</li>
-		                        <li>Tinder</li>
-		                    </ul>
+						{{#each receipt as |receipt|}}
+						  <div>{{receipt.storeid}}</div>
+						  <div>{{receipt.storename}}</div>
+						  <div>{{receipt.total}}</div>
+						  <div>{{receipt.timestamp}}</div>
+						{{/each}}
 		                </div>
 		                <div class="col-md-3 col-sm-6 mb-xs-24">
-		                    <i class="ti-harddrives icon mb32"></i>
-		                    <h6 class="uppercase">Cloud Enterprise</h6>
-		                    <ul>
-		                        <li>Box</li>
-		                        <li>Sunny Cloudy</li>
-		                        <li>Cumulii</li>
-		                        <li>Precipitatr</li>
-		                        <li>Nimb.us</li>
-		                    </ul>
+
 		                </div>
 		            </div>
 		            

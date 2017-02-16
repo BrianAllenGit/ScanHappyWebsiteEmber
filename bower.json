@@ -1,5 +1,6 @@
 {
   "name": "scan-happy-website",
   "dependencies": {
+    "rsvp.js": "rsvp#^3.3.3"
   }
 }
