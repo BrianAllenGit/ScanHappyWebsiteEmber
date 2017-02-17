@@ -10,10 +10,11 @@ Router.map(function() {
   this.route('login');
   this.route('sign-up');
   this.authenticatedRoute('portal', function() {
-  	this.authenticatedRoute('receipts');
   	this.authenticatedRoute('index', {path : '/'});
+  	this.authenticatedRoute('receipts', function() {
+  		this.authenticatedRoute('show', {path : '/:receipt_id'});
+  	});
   });
-
 });
 
 export default Router;
