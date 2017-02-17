@@ -15,6 +15,9 @@
                     <ul class="menu">
                         {{#if session.isAuthenticated}}
                         <li>
+                            {{#link-to "portal"}}Go to portal{{/link-to}}
+                        </li>
+                        <li>
                             <a href="" {{action 'signOut'}}>Sign Out</a>
                         </li>
                         {{else}}

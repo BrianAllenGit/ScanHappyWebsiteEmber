@@ -1,36 +1,49 @@
-		<section class="bg-dark">
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-sm-2 mb-xs-24 col-md-2">
-		              {{!--       <i class="ti-pulse icon mb32"></i>
-		                    <h6 class="uppercase">Health Monitoring</h6> --}}
-		                    {{!-- <ul>
-		                        <li>Medibank Private</li>
-		                        <li>Fit Bit</li>
-		                        <li>GoPro LTD.</li>
-		                        <li>Adventours</li>
-		                        <li>Airbnb</li>
-		                        <li>Chemist Warehouse</li>
-		                    </ul> --}}
-						{{#each user as |user|}}
-						  <div>{{user.name}}</div>
-						  <div>{{user.email}}</div>
-						{{/each}}
-		                </div>
-		                
-		                <div class="col-sm-3 mb-xs-24 col-md-3">
-						{{#each receipt as |receipt|}}
-						  <div>{{receipt.storeid}}</div>
-						  <div>{{receipt.storename}}</div>
-						  <div>{{receipt.total}}</div>
-						  <div>{{receipt.timestamp}}</div>
-						{{/each}}
-		                </div>
-		                <div class="col-md-6 col-sm-6 mb-xs-24">
+<section class="bg-primary portal-container">
+	<div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h6 class="uppercase">Hello,  {{user.name}}!</h6>
+                <hr class="mb160 mb-xs-24">
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-sm-4 text-center">
+                <div class="feature">
+                    <i class="ti-gallery icon fade-3-4 inline-block mb16"></i>
+                    <h4>Update Information</h4>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="feature">
+                    <i class="ti-package icon fade-3-4 inline-block mb16"></i>
+                    <h4>View Receipts</h4>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="feature">
+                    <i class="ti-layers icon fade-3-4 inline-block mb16"></i>
+                    <h4>Some Other Shit</h4>
+                </div>
+            </div>
+        </div>
 
-		                </div>
-		            </div>
-		            
-		        </div>
-		        
-		    </section>
+
+	    <div class="row">
+	        <div class="col-sm-2 mb-xs-24 col-md-2">
+			  <div>{{user.name}}</div>
+			  <div>{{user.email}}</div>
+	        </div>
+	        
+	        <div class="col-sm-3 mb-xs-24 col-md-3 portal-gray">
+			{{#each receipt as |receipt|}}
+			  <div>{{receipt.storeid}}</div>
+			  <div>{{receipt.storename}}</div>
+			  <div>{{receipt.total}}</div>
+			  <div>{{receipt.timestamp}}</div>
+			{{/each}}
+	        </div>
+	        <div class="col-md-6 col-sm-6 mb-xs-24">
+	        </div>
+	    </div> 
+	</div>
+</section>
