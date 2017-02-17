@@ -7,16 +7,18 @@
         </div>  
         <div class="row">
             <div class="col-sm-4 text-center">
-                <div class="feature">
-                    <i class="ti-gallery icon fade-3-4 inline-block mb16"></i>
-                    <h4>Update Information</h4>
+                <div class=" tab-title">
+                    {{#link-to "portal.about"}}
+                        <i class="ti-gallery icon fade-3-4 inline-block mb16"></i>
+                        <h4>My Information</h4>
+                    {{/link-to}}
                 </div>
             </div>
             <div class="col-sm-4 text-center">
                 <div class="feature">
                     {{#link-to "portal.receipts"}}
                         <i class="ti-package icon fade-3-4 inline-block mb16"></i>
-                        <h4>View Receipts</h4>
+                        <h4>My Receipts</h4>
                     {{/link-to}}
                 </div>
             </div>

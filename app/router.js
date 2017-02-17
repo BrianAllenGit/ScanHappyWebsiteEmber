@@ -11,8 +11,9 @@ Router.map(function() {
   this.route('sign-up');
   this.authenticatedRoute('portal', function() {
   	this.authenticatedRoute('index', {path : '/'});
+  	this.authenticatedRoute('about');
   	this.authenticatedRoute('receipts', function() {
-  		this.authenticatedRoute('show', {path : '/:receipt_id'});
+        this.authenticatedRoute('show', {path : '/:receipt_id'});
   	});
   });
 });
