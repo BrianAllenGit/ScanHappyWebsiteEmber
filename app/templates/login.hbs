@@ -13,10 +13,14 @@
                             <input type="submit" {{action 'signIn' 'password'}} value="Login" />
                         {{/if}}
                     </form>
-                    <p class="mb0">Forgot your password?
+
+                    <button class="loginBtn loginBtn--google" {{action "googleSignIn"}}>
+                      Login with Google
+                    </button>  
+                                        <p class="mb0">Forgot your password?
                         <a href="#">Click Here To Reset</a>
-                    </p>
-                </div>
+                    </p>       
+                    </div>
             </div>
         </div>
         <!--end of row-->

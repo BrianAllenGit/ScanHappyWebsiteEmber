@@ -4,7 +4,7 @@ export default DS.Model.extend({
   receiptid: DS.attr('string'),
   storeid: DS.attr('string'),
   storename: DS.attr('string'),
-  timestamp: DS.attr('number'),
+  timestampcreated: DS.attr('number'),
   total: DS.attr('number'),
   userid: DS.attr('string')
 });
