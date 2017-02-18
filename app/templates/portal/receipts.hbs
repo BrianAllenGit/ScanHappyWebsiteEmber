@@ -6,7 +6,7 @@
 					{{#active-link}}
 	        			{{#link-to "portal.receipts.show" receipt.receiptid}}
 			                <div class="title individual-receipt">
-			                    <span class="receipt-span">{{receipt.storename}} - {{receipt.total}}</span>
+			                    <span class="receipt-span">{{format-epoch receipt.timestampcreated.timestamp}}  -  {{receipt.storename}}</span>
 			                </div>
 				            <div class="content">
 				            	{{outlet}}
