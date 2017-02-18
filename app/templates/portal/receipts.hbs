@@ -1,22 +1,23 @@
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 text-center">
-		{{#each model as |receipt|}}
-		<ul>
-		  <li>{{receipt.storeid}}</li>
-		  <li>{{receipt.storename}}</li>
-		  <li>{{receipt.total}}</li>
-		  {{#link-to "portal.receipts.show" receipt.id}}
-		  <li>{{receipt.id}}</li>
-		  {{/link-to}}
-		</ul>
-		{{/each}}                
-		<hr class="mb160 mb-xs-24">
-        </div>
-    </div>  			
-    <div class="row">
-    	{{outlet}}
-    </div>
+ <div class="container">
+	<div class="row">
+	    <div class="col-sm-12 text-center">
+	        <ul class="accordion accordion-1 one-open">
+	        	{{#each model as |receipt|}}
+					{{#active-link}}
+	        			{{#link-to "portal.receipts.show" receipt.receiptid}}
+			                <div class="title individual-receipt">
+			                    <span class="receipt-span">{{receipt.storename}} - {{receipt.total}}</span>
+			                </div>
+				            <div class="content">
+				            	{{outlet}}
+				            </div>
+    		            {{/link-to}}
+					{{/active-link}}
+		        {{/each}}
+	        </ul>
+	        <!--end of accordion-->
+	    </div>
+	</div>
 </div>
 
 

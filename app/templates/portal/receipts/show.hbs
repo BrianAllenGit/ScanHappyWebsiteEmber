@@ -1,4 +1,18 @@
-			  <div>{{model.storeid}}</div>
-			  <div>{{model.storename}}</div>
-			  <div>{{model.total}}</div>
-			  <div>{{model.timestamp}}</div>
+<ul class="b0">
+	<li class="mb8">
+    	<h5 class="uppercase inline-block mb0">Store /&nbsp;</h5>
+		<span>{{receipt.storename}}</span>
+	</li>
+	<li class="mb8">
+    	<h5 class="uppercase inline-block mb0">Name  |  Quantity  |  Price</h5>
+	</li>	
+	{{#each receiptdetails as |receiptdetails|}}	
+		<li class="mb8">
+			<span>{{receiptdetails.productname}}  |  {{receiptdetails.productquantity}}  |  {{receiptdetails.productprice}}</span>
+		</li>
+	{{/each}}
+	<li class="mb8">
+    	<h5 class="uppercase inline-block mb0">Total /&nbsp;</h5>
+		<span>{{receipt.total}}</span>
+	</li>						
+</ul> 

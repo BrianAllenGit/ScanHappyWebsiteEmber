@@ -2152,7 +2152,7 @@ button[type="submit"] .form-loading {
   font-weight: 700;
 }
 .accordion-1 .active .title {
-  background: #fd7577;
+  background: #feeaea;
   color: #fff;
 }
 .accordion-1 .content {
@@ -2176,7 +2176,7 @@ button[type="submit"] .form-loading {
   background: #eee;
 }
 .accordion-1 .active .title:hover {
-  background: #fd7577;
+  background: #fbbbbb;
 }
 .accordion-2 .title {
   font-size: 16px;
