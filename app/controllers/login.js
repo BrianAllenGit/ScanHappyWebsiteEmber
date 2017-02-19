@@ -19,10 +19,8 @@ export default Ember.Controller.extend({
     googleSignIn(){
       let controller=this;
             this.get('session').open('firebase', { provider: 'google'}).then(function(data) {
-        controller.transitionToRoute('portal');
-
+            controller.transitionToRoute('portal');
             });
-
     }
   } 
 });

@@ -22,8 +22,10 @@
 		        	<h5 class="uppercase inline-block mb0">Address /&nbsp;</h5>
 					<span>{{model.address}}</span>
 				</li>			
-			</ul>            
+			</ul>
+			{{#link-to 'portal.about.edit'class='btn btn-sm'}}Update Information{{/link-to}}            
         </div>
+        {{outlet}}
     </div>  			
 
 </div>
