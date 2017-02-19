@@ -10,7 +10,6 @@ Router.map(function() {
   this.route('login');
   this.route('sign-up');
   this.authenticatedRoute('portal', function() {
-  	this.authenticatedRoute('index', {path : '/'});
   	this.authenticatedRoute('about', function (){
       this.authenticatedRoute('edit');
     });
