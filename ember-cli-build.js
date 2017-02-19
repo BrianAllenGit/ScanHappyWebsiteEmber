@@ -7,7 +7,12 @@ module.exports = function(defaults) {
     // Add options here
       sassOptions: {
       extension: 'sass'
+    },
+      minifyCSS: {
+    options: {
+      processImport: false
     }
+  }
   });
 
   // Use `app.import` to add additional libraries to the generated
