@@ -1,8 +1,15 @@
  <div class="container">
+	 <div class="row">
+	 	<div class="col-sm-12 text-center">
+			<button class="btn btn-sm " {{action "sortBy" "storename"}}>Storename</button>
+			<button class="btn btn-sm "  {{action "sortBy" "timestampcreated.timestamp"}}>Date</button>
+			<button class="btn btn-sm "  {{action "sortBy" "receiptid"}}>Receiptid</button>
+	 	</div>
+	 </div>
 	<div class="row">
 	    <div class="col-sm-12 text-center">
 	        <ul class="accordion accordion-1 one-open">
-	        	{{#each model as |receipt|}}
+	        	{{#each arrangedContent as |receipt|}}
 					{{#active-link}}
 	        			{{#link-to "portal.receipts.show" receipt.receiptid}}
 			                <div class="title individual-receipt">
