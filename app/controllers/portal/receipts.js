@@ -11,16 +11,11 @@ export default Ember.Controller.extend({
       } else {
         return Ember.compare(b.get(sortProperty), a.get(sortProperty));
       }
-    })
+    });
   }),
 	actions:{
-
 		sortBy: function(property) {
       this.set('sortProperties', [property]);
-
-						// Ember.computed.sort('model', 'property');
-			// this.set('sortProperties', [property]);
-			// this.toggleProperty('sortAscending');
         }
 	}
 });

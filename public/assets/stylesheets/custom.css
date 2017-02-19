@@ -1,4 +1,8 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
+.site-header.active{
+  display:none;
+}
+
 .receipt-span{
 color:black !important;
 }
