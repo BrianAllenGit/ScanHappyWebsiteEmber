@@ -20,7 +20,9 @@ export default Ember.Controller.extend({
       let controller=this;
             this.get('session').open('firebase', { provider: 'google'}).then(function(data) {
             controller.transitionToRoute('portal');
-            });
+            }, (error) => {
+        alert(error);
+      });
     }
   } 
 });
