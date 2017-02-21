@@ -1,4 +1,7 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
+.center-me-please{
+  text-align:center;
+}
 .site-header.active{
   display:none;
 }
